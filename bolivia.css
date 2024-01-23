@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Amatic SC", sans-serif;
+    border: 2px solid red;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+nav {
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+nav a {
+    font-size: xx-large;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    padding-right: 5%;
+}
+
+nav a+a::before {
+    content: " | ";
+    text-align: center;
+    padding-right: 5%;
+}
+
+.title-pic {
+    width: 50%;
+    margin-left: 25%;
+    height: 50vh;
+    position: relative;
+    background-image: url(photos/salt_flats.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    color: white;
+    padding-top: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    margin-left: 25%;
+    background-image: url(photos/salt_flats_puddle.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.food,
+.activities,
+.gallery {
+    width: 75%;
+    margin-left: 12.5%;
+    background-color: rgba(242, 242, 242, 0.7);
+    border-radius: 10px;
+}
+
+div > .food {
+    display: grid;
+}
+
+.saltenas {
+    grid-area: 1 / 1 / 4 / 1;
+    grid-column-end: auto;
+    height: 80px;
+}
+
+.chicharron {
+    grid-area: 1 / 2 / 4 / 2;
+}
+
+.pique.macho {
+    grid-area: 1 / 3 / 4 / 3;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;  
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+p {
+    word-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
